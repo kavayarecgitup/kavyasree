@@ -1,0 +1,10 @@
+n = int(input())
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
+indices = {}
+for i, num in enumerate(B):
+    indices[num] = i
+P = []
+for num in A:
+    P.append(indices[num])
+print(" ".join(map(str, P)))
