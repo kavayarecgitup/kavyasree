@@ -1,0 +1,9 @@
+n = int(input())
+arr = []
+for _ in range(n):
+    arr.append(int(input()))
+distinct_elements = []
+for num in arr:
+    if num not in distinct_elements:
+        distinct_elements.append(num)
+print(" ".join(map(str, distinct_elements)))
